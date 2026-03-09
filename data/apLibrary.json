@@ -1,0 +1,32 @@
+{
+  "_version": 1,
+  "entries": [
+    {
+      "id": "aom-unilateral",
+      "name": "Acute Otitis Media (AOM) - Unilateral",
+      "category": "Infections",
+      "tags": ["antibiotic", "ear"],
+      "shortCode": "aom",
+      "hotkey": "F1",
+      "text": "Amoxicillin 90 mg/kg/day divided BID x 10 days. Discussed diagnosis, expected course, and return precautions with family. Follow up if no improvement in 48-72 hours or sooner if worsening."
+    },
+    {
+      "id": "viral-uri",
+      "name": "Viral URI",
+      "category": "Respiratory",
+      "tags": ["supportive", "uri"],
+      "shortCode": "uri",
+      "hotkey": "F2",
+      "text": "Supportive care recommended including saline nasal rinses, humidified air, honey for cough (if older than 1 year), and adequate hydration. No antibiotics indicated at this time. Return if fever persists longer than 5 days, symptoms worsen, or new symptoms develop."
+    },
+    {
+      "id": "gas-pharyngitis",
+      "name": "Strep Pharyngitis",
+      "category": "Infections",
+      "tags": ["throat", "antibiotic"],
+      "shortCode": "strep",
+      "hotkey": "F3",
+      "text": "Started amoxicillin per weight-based dosing. Advised replacement of toothbrush after 24 hours of antibiotics and discussed return precautions for persistent fever, poor intake, or worsening throat pain."
+    }
+  ]
+}

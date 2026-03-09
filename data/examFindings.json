@@ -1,0 +1,16 @@
+{
+  "_version": 1,
+  "systems": {
+    "General": {
+      "normal": "Alert, active, no acute distress.",
+      "abnormal": ["Ill appearing", "Lethargic", "Dehydrated"]
+    },
+    "HEENT": {
+      "normal": "Normocephalic, atraumatic."
+    },
+    "Respiratory": {
+      "normal": "Breathing comfortably with clear breath sounds bilaterally.",
+      "abnormal": ["Wheeze", "Rhonchi", "Crackles", "Increased work of breathing"]
+    }
+  }
+}

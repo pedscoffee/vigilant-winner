@@ -1,0 +1,10 @@
+{
+  "_version": 1,
+  "complaints": {
+    "Fever": {
+      "hpiPrompts": ["Duration", "Max temperature", "Associated symptoms", "Sick contacts"],
+      "focusedRos": ["No respiratory distress", "No decreased urine output"],
+      "suggestedDiagnoses": ["Viral syndrome", "AOM", "Strep pharyngitis"]
+    }
+  }
+}

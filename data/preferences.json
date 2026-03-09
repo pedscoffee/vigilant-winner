@@ -1,0 +1,24 @@
+{
+  "_version": 1,
+  "windowState": {
+    "width": 480,
+    "height": 700,
+    "alwaysOnTop": true,
+    "autoCopy": true,
+    "globalShortcut": "CommandOrControl+Shift+N"
+  },
+  "outputFormat": {
+    "order": ["hpi", "ros", "exam", "assessment", "plan"],
+    "showHeaders": true,
+    "labels": {
+      "hpi": "HPI",
+      "ros": "ROS",
+      "exam": "Exam",
+      "assessment": "Assessment",
+      "plan": "Plan"
+    }
+  },
+  "shortcuts": {
+    "globalCommandPalette": "Control+Space"
+  }
+}

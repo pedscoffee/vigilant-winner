@@ -1,0 +1,10 @@
+{
+  "_version": 1,
+  "ages": {
+    "2mo": {
+      "milestones": ["Tracks objects", "Social smile", "Coos"],
+      "guidance": ["Safe sleep", "Rear-facing car seat", "Feeding cues"],
+      "immunizations": ["DTaP", "IPV", "Hib", "PCV", "Rotavirus", "Hep B"]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_version": 1,
+  "templates": [
+    {
+      "id": "normal-labs",
+      "category": "Labs",
+      "name": "Normal labs",
+      "text": "Lab results were reviewed and are within expected normal range for age. No changes to current plan are needed at this time."
+    }
+  ]
+}
