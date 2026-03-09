@@ -1,84 +1,84 @@
 {
-  "_version": 2,
+  "_version": 7,
   "systems": {
     "General": {
-      "normal": "Alert, active, no acute distress.",
-      "abnormal": ["Ill appearing", "Lethargic", "Dehydrated"],
+      "normal": "Alert, interactive, no acute distress.",
+      "abnormal": ["Ill appearing", "Lethargic", "Toxic appearing", "Dehydrated"],
       "defaultIncluded": true
     },
     "HEENT": {
-      "normal": "Normocephalic, atraumatic.",
-      "abnormal": ["Head tenderness", "Facial swelling"],
+      "normal": "Normocephalic and atraumatic.",
+      "abnormal": ["Head tenderness", "Facial swelling", "Sinus tenderness"],
       "defaultIncluded": true
     },
     "Eyes": {
       "normal": "Conjunctiva clear. PERRL. EOMI.",
-      "abnormal": ["Conjunctival injection", "Periorbital edema", "Discharge"],
+      "abnormal": ["Conjunctival injection", "Purulent discharge", "Periorbital edema", "Photophobia"],
       "defaultIncluded": true
     },
     "Ears": {
-      "normal": "TMs pearly bilaterally with normal landmarks and light reflex.",
-      "abnormal": ["TM dull", "TM bulging", "TM retracted", "Decreased mobility", "Otorrhea"],
+      "normal": "TMs with normal landmarks/light reflex bilaterally.",
+      "abnormal": ["TM erythematous", "TM bulging", "TM retracted", "Decreased mobility", "Otorrhea"],
       "defaultIncluded": true
     },
     "Nose": {
-      "normal": "Nares patent, no significant discharge.",
-      "abnormal": ["Purulent discharge", "Edematous turbinates", "Epistaxis"],
+      "normal": "Nares patent with mild/no discharge.",
+      "abnormal": ["Purulent discharge", "Edematous turbinates", "Epistaxis", "Nasal flaring"],
       "defaultIncluded": true
     },
     "Throat": {
       "normal": "Mucous membranes moist. Oropharynx clear. Uvula midline.",
-      "abnormal": ["Tonsillar erythema", "Exudate", "Tonsils 3+", "Palatal petechiae"],
+      "abnormal": ["Tonsillar erythema", "Exudate", "Tonsils enlarged", "Palatal petechiae", "Dry mucous membranes"],
       "defaultIncluded": true
     },
     "Neck": {
       "normal": "Supple with full range of motion.",
-      "abnormal": ["Neck stiffness", "Limited range of motion"],
+      "abnormal": ["Neck stiffness", "Limited ROM", "Tender anterior neck"],
       "defaultIncluded": true
     },
     "Lymph nodes": {
-      "normal": "No significant cervical lymphadenopathy.",
-      "abnormal": ["Anterior cervical adenopathy", "Tender nodes", "Matted nodes"],
+      "normal": "No significant cervical adenopathy.",
+      "abnormal": ["Anterior cervical adenopathy", "Posterior cervical adenopathy", "Tender nodes", "Matted nodes"],
       "defaultIncluded": true
     },
     "Respiratory": {
-      "normal": "Breathing comfortably with clear breath sounds bilaterally.",
-      "abnormal": ["Wheeze", "Rhonchi", "Crackles", "Retractions", "Tachypnea"],
+      "normal": "Breathing comfortably; lungs clear bilaterally.",
+      "abnormal": ["Wheeze", "Rhonchi", "Crackles", "Retractions", "Tachypnea", "Diminished aeration"],
       "defaultIncluded": true
     },
     "Cardiovascular": {
-      "normal": "Regular rate and rhythm. No murmur.",
-      "abnormal": ["Tachycardia", "Murmur", "Delayed cap refill"],
+      "normal": "Regular rate and rhythm. No murmur. Normal perfusion.",
+      "abnormal": ["Tachycardia", "Murmur", "Delayed cap refill", "Irregular rhythm"],
       "defaultIncluded": true
     },
     "Abdomen": {
       "normal": "Soft, non-tender, non-distended. No guarding.",
-      "abnormal": ["Diffuse tenderness", "RLQ tenderness", "Hepatosplenomegaly"],
+      "abnormal": ["Diffuse tenderness", "RLQ tenderness", "Rebound", "Hepatosplenomegaly", "Distension"],
       "defaultIncluded": true
     },
     "GU": {
-      "normal": "Normal external genitalia for age.",
-      "abnormal": ["Erythema", "Discharge", "Swelling"],
+      "normal": "Normal external genitalia for age and exam context.",
+      "abnormal": ["Erythema", "Discharge", "Swelling", "Testicular tenderness"],
       "defaultIncluded": false
     },
     "MSK": {
-      "normal": "Normal tone and range of motion.",
-      "abnormal": ["Joint swelling", "Focal tenderness", "Limp"],
+      "normal": "Normal tone and range of motion; no focal tenderness.",
+      "abnormal": ["Joint swelling", "Focal tenderness", "Limp", "Decreased ROM", "Gait abnormality"],
       "defaultIncluded": true
     },
     "Skin": {
-      "normal": "Warm, dry, no rash.",
-      "abnormal": ["Macular rash", "Papular rash", "Vesicular rash", "Urticarial rash", "Petechiae"],
+      "normal": "Warm and dry; no concerning lesions.",
+      "abnormal": ["Maculopapular rash", "Vesicular rash", "Urticarial rash", "Petechiae/purpura", "Cellulitic erythema"],
       "defaultIncluded": true
     },
     "Neurologic": {
-      "normal": "Alert, age-appropriate neuro exam, no focal deficits.",
-      "abnormal": ["Focal weakness", "Ataxia", "Abnormal gait"],
+      "normal": "Alert with age-appropriate neurologic exam and no focal deficit.",
+      "abnormal": ["Focal weakness", "Ataxia", "Abnormal gait", "Meningeal signs"],
       "defaultIncluded": true
     },
     "Psychiatric/Behavioral": {
-      "normal": "Appropriate affect and behavior for age.",
-      "abnormal": ["Flat affect", "Anxious mood", "Hyperactivity"],
+      "normal": "Appropriate mood, affect, and behavior for age.",
+      "abnormal": ["Flat affect", "Anxious mood", "Hyperactivity", "Oppositional behavior"],
       "defaultIncluded": true
     }
   }

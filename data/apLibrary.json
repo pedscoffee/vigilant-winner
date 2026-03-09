@@ -1,45 +1,209 @@
 {
-  "_version": 2,
+  "_version": 7,
   "entries": [
     {
       "id": "aom-unilateral",
       "name": "Acute Otitis Media (AOM) - Unilateral",
       "category": "Infections",
-      "tags": ["antibiotic", "ear"],
+      "tags": ["ear", "antibiotic", "pain"],
       "shortCode": "aom",
       "hotkey": "F1",
       "globalHotkey": "Control+Shift+Alt+1",
-      "text": "Amoxicillin 90 mg/kg/day divided BID x 10 days. Discussed diagnosis, expected course, and return precautions with family. Follow up if no improvement in 48-72 hours or sooner if worsening."
+      "text": "AOM diagnosis reviewed with family. Start high-dose amoxicillin 80-90 mg/kg/day divided BID (max per dosing guidelines) for age/severity-appropriate duration. Continue ibuprofen/acetaminophen as needed for pain. Encourage hydration. Return for persistent fever, worsening pain, otorrhea, or no improvement in 48-72 hours."
+    },
+    {
+      "id": "aom-watchful-waiting",
+      "name": "Acute Otitis Media - Watchful Waiting",
+      "category": "Infections",
+      "tags": ["ear", "observation"],
+      "shortCode": "aomww",
+      "hotkey": "F2",
+      "globalHotkey": "Control+Shift+Alt+2",
+      "text": "Discussed watchful waiting approach for non-severe AOM. Optimize analgesia with ibuprofen/acetaminophen and monitor symptoms closely. Family to start delayed antibiotic only if worsening pain/fever or no improvement over 48 hours. Recheck sooner for red flag symptoms."
+    },
+    {
+      "id": "otitis-externa",
+      "name": "Otitis Externa",
+      "category": "Infections",
+      "tags": ["ear", "swimmer"],
+      "shortCode": "oe",
+      "hotkey": "F3",
+      "globalHotkey": "Control+Shift+Alt+3",
+      "text": "Findings consistent with otitis externa. Start topical antibiotic/steroid ear drops as prescribed. Keep ear canal dry; avoid swimming/submersion until pain resolved and treatment complete. Return for fever, spreading erythema, worsening pain, or no response to treatment."
     },
     {
       "id": "viral-uri",
       "name": "Viral URI",
       "category": "Respiratory",
-      "tags": ["supportive", "uri"],
+      "tags": ["uri", "cough", "supportive"],
       "shortCode": "uri",
-      "hotkey": "F2",
-      "globalHotkey": "Control+Shift+Alt+2",
-      "text": "Supportive care recommended including saline nasal rinses, humidified air, honey for cough (if older than 1 year), and adequate hydration. No antibiotics indicated at this time. Return if fever persists longer than 5 days, symptoms worsen, or new symptoms develop."
+      "hotkey": "F4",
+      "globalHotkey": "Control+Shift+Alt+4",
+      "text": "Clinical picture most consistent with viral upper respiratory infection. Supportive care reviewed: nasal saline/suction, humidified air, hydration, and honey for cough if older than 1 year. Antibiotics not indicated at this time. Return for respiratory distress, dehydration, persistent high fever, or worsening symptoms."
     },
     {
-      "id": "gas-pharyngitis",
+      "id": "sinusitis-bacterial",
+      "name": "Acute Bacterial Sinusitis",
+      "category": "Respiratory",
+      "tags": ["sinus", "antibiotic"],
+      "shortCode": "sinus",
+      "hotkey": "F5",
+      "globalHotkey": "Control+Shift+Alt+5",
+      "text": "Symptoms meet criteria for likely acute bacterial sinusitis (persistent/worsening pattern). Start weight-based antibiotic therapy per guideline selection and counsel regarding expected improvement window. Continue supportive care. Return for orbital swelling, severe headache, dehydration, or lack of improvement."
+    },
+    {
+      "id": "strep-pharyngitis",
       "name": "Strep Pharyngitis",
       "category": "Infections",
-      "tags": ["throat", "antibiotic"],
+      "tags": ["throat", "strep", "antibiotic"],
       "shortCode": "strep",
-      "hotkey": "F3",
-      "globalHotkey": "Control+Shift+Alt+3",
-      "text": "Started amoxicillin per weight-based dosing. Advised replacement of toothbrush after 24 hours of antibiotics and discussed return precautions for persistent fever, poor intake, or worsening throat pain."
+      "hotkey": "F6",
+      "globalHotkey": "Control+Shift+Alt+6",
+      "text": "Group A strep pharyngitis diagnosed/treated. Begin guideline-concordant antibiotic therapy with weight-based dosing. Discussed contagious period and school return after 24 hours afebrile and on antibiotics. Hydration and analgesia advised. Return for poor intake, persistent fever, breathing concerns, or worsening pain."
+    },
+    {
+      "id": "viral-pharyngitis",
+      "name": "Viral Pharyngitis",
+      "category": "Infections",
+      "tags": ["throat", "supportive"],
+      "shortCode": "vphar",
+      "hotkey": "F7",
+      "globalHotkey": "Control+Shift+Alt+7",
+      "text": "Exam/course most consistent with viral pharyngitis. No antibiotic indication. Encourage fluids, rest, and symptomatic care with age-appropriate analgesics. Return for dehydration, prolonged fever, drooling, voice changes, or worsening symptoms."
+    },
+    {
+      "id": "influenza-like-illness",
+      "name": "Influenza-like Illness",
+      "category": "Infections",
+      "tags": ["flu", "fever", "respiratory"],
+      "shortCode": "flu",
+      "hotkey": "F8",
+      "globalHotkey": "Control+Shift+Alt+8",
+      "text": "Symptoms consistent with influenza-like illness. Reviewed hydration goals, fever control, rest, and home isolation guidance. Discussed antiviral timing/indications when appropriate. Return urgently for breathing difficulty, chest pain, persistent vomiting, altered mental status, or signs of dehydration."
+    },
+    {
+      "id": "bronchiolitis",
+      "name": "Bronchiolitis",
+      "category": "Respiratory",
+      "tags": ["wheeze", "infant", "supportive"],
+      "shortCode": "bronch",
+      "hotkey": "F9",
+      "globalHotkey": "Control+Shift+Alt+9",
+      "text": "Presentation is consistent with bronchiolitis. Supportive management emphasized: frequent nasal suction, hydration, and close respiratory monitoring. Reviewed warning signs requiring urgent re-evaluation including increased work of breathing, poor intake, or reduced urine output."
+    },
+    {
+      "id": "asthma-exacerbation-mild",
+      "name": "Asthma Exacerbation - Mild",
+      "category": "Chronic Conditions",
+      "tags": ["asthma", "wheeze"],
+      "shortCode": "asthma",
+      "hotkey": "F10",
+      "globalHotkey": "Control+Shift+Alt+0",
+      "text": "Mild asthma exacerbation addressed. Continue rescue albuterol every 4 hours as needed with spacer technique reinforcement. Reviewed trigger control and asthma action plan zones. Escalate care for worsening work of breathing, poor response to bronchodilator, or nighttime progression."
     },
     {
       "id": "viral-syndrome",
-      "name": "Viral syndrome",
+      "name": "Viral Syndrome",
       "category": "Infections",
-      "tags": ["supportive"],
+      "tags": ["fever", "supportive"],
       "shortCode": "viral",
-      "hotkey": "F4",
-      "globalHotkey": "Control+Shift+Alt+4",
-      "text": "Clinical presentation consistent with viral syndrome. Supportive care, hydration guidance, fever control, and return precautions reviewed in detail."
+      "text": "Overall presentation is consistent with an uncomplicated viral syndrome. Reviewed supportive care, hydration goals, fever comfort strategies, and expected course. Return precautions discussed for respiratory distress, dehydration, persistent fever, or worsening symptoms."
+    },
+    {
+      "id": "acute-gastroenteritis",
+      "name": "Acute Gastroenteritis",
+      "category": "GI",
+      "tags": ["vomiting", "diarrhea", "hydration"],
+      "shortCode": "age",
+      "text": "Likely viral gastroenteritis. Emphasized oral rehydration with frequent small-volume fluids and gradual diet advancement as tolerated. Reviewed dehydration signs and strict return precautions for persistent emesis, blood in stool, severe abdominal pain, or low urine output."
+    },
+    {
+      "id": "constipation-functional",
+      "name": "Constipation - Functional",
+      "category": "GI",
+      "tags": ["stool", "bowel"],
+      "shortCode": "const",
+      "text": "Functional constipation plan reviewed: stool softener/cleanout strategy as indicated, daily fiber/fluid goals, and scheduled toilet sits. Family counseled that prolonged maintenance is often needed to prevent relapse. Follow up for poor response, pain escalation, or blood in stool."
+    },
+    {
+      "id": "atopic-dermatitis",
+      "name": "Atopic Dermatitis",
+      "category": "Skin",
+      "tags": ["eczema", "itch"],
+      "shortCode": "ecz",
+      "text": "Atopic dermatitis management reviewed: daily emollient use, fragrance-free skin care, and short-course topical steroid to active flares as prescribed. Itch control and trigger minimization discussed. Return for concern of secondary infection or poor response."
+    },
+    {
+      "id": "urticaria",
+      "name": "Urticaria",
+      "category": "Skin",
+      "tags": ["hives", "allergy"],
+      "shortCode": "hives",
+      "text": "Urticarial rash discussed. Start non-sedating antihistamine with dose/frequency guidance. Avoid suspected triggers when identifiable. Reviewed emergency precautions for lip/tongue swelling, breathing symptoms, vomiting, or dizziness suggesting systemic reaction."
+    },
+    {
+      "id": "viral-exanthem",
+      "name": "Viral Exanthem",
+      "category": "Skin",
+      "tags": ["rash", "viral"],
+      "shortCode": "vex",
+      "text": "Rash pattern is most consistent with viral exanthem. Supportive care and skin comfort measures reviewed. Return for petechiae/purpura, persistent fever, mucosal involvement, severe pain, or clinical worsening."
+    },
+    {
+      "id": "allergic-rhinitis",
+      "name": "Allergic Rhinitis",
+      "category": "Respiratory",
+      "tags": ["allergy", "nasal"],
+      "shortCode": "ar",
+      "text": "Allergic rhinitis management discussed. Begin daily intranasal steroid and/or non-sedating antihistamine as appropriate. Environmental trigger reduction reviewed. Follow up if symptoms persist, sleep is impacted, or recurrent sinus/ear complications occur."
+    },
+    {
+      "id": "conjunctivitis-bacterial",
+      "name": "Conjunctivitis - Bacterial",
+      "category": "Infections",
+      "tags": ["eye", "discharge"],
+      "shortCode": "pink",
+      "text": "Bacterial conjunctivitis treatment initiated with ophthalmic antibiotic drops/ointment. Hand hygiene and secretion control reviewed. Return for eye pain, photophobia, vision changes, eyelid swelling, or lack of improvement."
+    },
+    {
+      "id": "adhd-follow-up-stable",
+      "name": "ADHD Follow-up - Stable",
+      "category": "Behavioral/Dev",
+      "tags": ["adhd", "medication"],
+      "shortCode": "adhdfu",
+      "text": "ADHD follow-up completed. Current medication response and side effect profile reviewed; regimen remains appropriate at this time. Reinforced school-home communication and behavioral supports. Follow up as scheduled or sooner for appetite, sleep, mood, or academic concerns."
+    },
+    {
+      "id": "anxiety-depression-screen-negative",
+      "name": "Anxiety/Depression Screen - Negative",
+      "category": "Preventive/Screenings",
+      "tags": ["mental health", "screening"],
+      "shortCode": "mhneg",
+      "text": "Behavioral health screening reviewed and not suggestive of acute anxiety/depression concern today. Discussed stress management, sleep, activity, and family communication. Advised to reach out for any change in mood, safety concerns, or functional decline."
+    },
+    {
+      "id": "well-child-routine",
+      "name": "Routine Child Health Examination",
+      "category": "Well Visit Diagnoses",
+      "tags": ["well visit", "prevention"],
+      "shortCode": "wcc",
+      "text": "Routine well child care completed with age-appropriate anticipatory guidance, growth/development review, and preventive screening. Immunization status addressed per schedule and counseling provided."
+    },
+    {
+      "id": "extremity-pain-musculoskeletal",
+      "name": "Extremity Pain - Likely Musculoskeletal",
+      "category": "Musculoskeletal",
+      "tags": ["pain", "injury", "limp"],
+      "shortCode": "mskpain",
+      "text": "Clinical assessment is most consistent with musculoskeletal strain/overuse injury without high-risk findings on exam today. Recommended activity modification, ice/heat, and age-appropriate analgesia. Return promptly for inability to bear weight, progressive swelling, nighttime pain, fever, or worsening symptoms."
+    },
+    {
+      "id": "sports-physical-cleared",
+      "name": "Sports Physical - Cleared",
+      "category": "Preventive/Screenings",
+      "tags": ["sports", "clearance"],
+      "shortCode": "sports",
+      "text": "Sports participation evaluation completed. No contraindication to athletic activity identified based on history and exam today. Reviewed hydration, conditioning, injury prevention, and return precautions for exertional symptoms."
     }
   ]
 }

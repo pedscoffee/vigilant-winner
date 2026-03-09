@@ -1,46 +1,137 @@
 {
-  "_version": 2,
+  "_version": 7,
   "ages": {
     "2mo": {
-      "milestones": ["Social smile", "Coos", "Tracks past midline"],
-      "guidance": ["Safe sleep", "Rear-facing car seat", "Vitamin D", "Tummy time"],
+      "milestones": ["Social smile", "Coos", "Tracks past midline", "Holds head briefly in prone"],
+      "guidance": ["Safe sleep (alone, on back, in crib)", "Rear-facing car seat", "Vitamin D supplementation", "Tummy time daily", "Fever guidance (<3 months urgent evaluation)"],
       "immunizations": ["DTaP", "IPV", "Hib", "PCV", "Rotavirus", "Hep B"],
-      "screenings": ["Postpartum depression", "Maternal support"],
+      "screenings": ["Postpartum depression", "Social determinants review"],
+      "includeHC": true
+    },
+    "4mo": {
+      "milestones": ["Laughs", "Rolls front to back", "Reaches for objects", "Good head control"],
+      "guidance": ["Sleep routines", "Tummy time progression", "Read/talk/sing daily", "Avoid walkers", "Home safety"],
+      "immunizations": ["DTaP", "IPV", "Hib", "PCV", "Rotavirus"],
+      "screenings": ["Postpartum depression", "Social determinants review"],
+      "includeHC": true
+    },
+    "6mo": {
+      "milestones": ["Sits with support", "Babbles", "Transfers object hand to hand", "Responds to name"],
+      "guidance": ["Introduce iron-rich complementary foods", "Allergen introduction guidance", "Oral hygiene with erupted teeth", "Injury prevention"],
+      "immunizations": ["DTaP", "IPV", "Hib", "PCV", "Rotavirus", "Hep B", "Influenza (seasonal)"],
+      "screenings": ["Maternal support", "Food security"],
+      "includeHC": true
+    },
+    "9mo": {
+      "milestones": ["Crawls/creeps", "Pulls to stand", "Immature pincer grasp", "Stranger anxiety"],
+      "guidance": ["Childproofing and poison prevention", "Cup introduction", "Consistent sleep schedule", "Read daily"],
+      "immunizations": ["Influenza (seasonal, as due)", "COVID (as due)"],
+      "screenings": ["SWYC/ASQ developmental screen"],
       "includeHC": true
     },
     "12mo": {
-      "milestones": ["Cruises", "Pincer grasp", "1-2 words"],
-      "guidance": ["Whole milk transition", "Oral care", "Home safety", "Screen time limits"],
-      "immunizations": ["MMR", "Varicella", "Hep A", "PCV", "Hib"],
-      "screenings": ["Lead", "Hemoglobin"],
+      "milestones": ["Cruises or early steps", "Pincer grasp", "Uses 1-2 words", "Follows simple commands"],
+      "guidance": ["Whole milk transition", "Bottle wean planning", "Brushing teeth twice daily", "Home and water safety"],
+      "immunizations": ["MMR", "Varicella", "Hep A", "PCV", "Hib", "Influenza (seasonal)"],
+      "screenings": ["Lead", "Hemoglobin/anemia", "TB risk"],
+      "includeHC": false
+    },
+    "15mo": {
+      "milestones": ["Walks independently", "Points to request/share", "Uses several words", "Imitates activities"],
+      "guidance": ["Limit screen exposure", "Language-rich routines", "Tantrum strategies", "Dental home"],
+      "immunizations": ["DTaP", "Hib/PCV catch-up as needed", "Influenza (seasonal)"],
+      "screenings": ["Developmental surveillance"],
+      "includeHC": false
+    },
+    "18mo": {
+      "milestones": ["Runs", "Uses 10+ words", "Points to body parts", "Engages in pretend play"],
+      "guidance": ["Toilet readiness discussion", "Behavior/discipline framework", "Nutrition and picky eating counseling"],
+      "immunizations": ["Hep A (dose 2)", "Influenza (seasonal)"],
+      "screenings": ["MCHAT-R", "Developmental screen", "Autism follow-up if indicated"],
       "includeHC": false
     },
     "2yr": {
-      "milestones": ["2-word phrases", "Runs", "Follows 2-step commands"],
-      "guidance": ["Toilet readiness", "Nutrition", "Sleep routines", "Behavioral limits"],
-      "immunizations": ["Hep A"],
-      "screenings": ["MCHAT-R", "Anemia risk", "Lead risk"],
+      "milestones": ["2-word phrases", "Runs and climbs", "Follows 2-step commands", "Parallel play"],
+      "guidance": ["Toilet training readiness", "Structured routines", "Nutrition and iron sources", "Sleep hygiene"],
+      "immunizations": ["Influenza (seasonal)", "COVID (as due)"],
+      "screenings": ["MCHAT-R", "Lead risk", "Anemia risk"],
+      "includeHC": false
+    },
+    "3yr": {
+      "milestones": ["3-word sentences", "Pedals tricycle", "Copies circle", "Shares/turn takes with support"],
+      "guidance": ["Preschool readiness", "Behavior consistency", "Helmet and car seat safety", "Limit sugary drinks"],
+      "immunizations": ["Influenza (seasonal)", "COVID (as due)"],
+      "screenings": ["Vision (attempt)", "Blood pressure", "Developmental surveillance"],
+      "includeHC": false
+    },
+    "4yr": {
+      "milestones": ["Tells stories", "Hops on one foot", "Draws person with parts", "Plays cooperatively"],
+      "guidance": ["Kindergarten readiness", "Daily reading", "Screen-time boundaries", "Booster seat counseling"],
+      "immunizations": ["DTaP", "IPV", "MMR", "Varicella", "Influenza (seasonal)"],
+      "screenings": ["Vision", "Hearing", "Blood pressure"],
       "includeHC": false
     },
     "5yr": {
-      "milestones": ["Prints some letters", "Counts to 10", "Hops/skips"],
-      "guidance": ["School readiness", "Activity", "Safety rules", "Dental hygiene"],
-      "immunizations": ["DTaP", "IPV", "MMR", "Varicella"],
-      "screenings": ["Vision", "Hearing"],
+      "milestones": ["Prints some letters", "Counts to 10+", "Hops/skips", "Follows multistep directions"],
+      "guidance": ["School adjustment", "Physical activity daily", "Dental hygiene", "Safety rules and boundaries"],
+      "immunizations": ["Influenza (seasonal)", "COVID (as due)"],
+      "screenings": ["Vision", "Hearing", "Blood pressure"],
+      "includeHC": false
+    },
+    "6yr": {
+      "milestones": ["Reading readiness progression", "Peer relationship development", "Improving self-care"],
+      "guidance": ["Sleep duration goals", "Bullying prevention", "Healthy snacks", "Seat belt and sports safety"],
+      "immunizations": ["Influenza (seasonal)"],
+      "screenings": ["Vision", "Hearing (as indicated)", "Blood pressure"],
+      "includeHC": false
+    },
+    "8yr": {
+      "milestones": ["Academic progress monitoring", "Executive skill growth", "Independent hygiene"],
+      "guidance": ["Media supervision", "Physical activity 60 min/day", "Nutrition and portion awareness", "Bike/helmet safety"],
+      "immunizations": ["Influenza (seasonal)", "COVID (as due)"],
+      "screenings": ["Vision", "Blood pressure", "Dyslipidemia risk review"],
+      "includeHC": false
+    },
+    "10yr": {
+      "milestones": ["Pre-adolescent developmental transition", "Increasing responsibility", "Social-emotional skill growth"],
+      "guidance": ["Puberty anticipatory guidance", "Digital citizenship", "Sleep and school performance", "Mental health check-in"],
+      "immunizations": ["Influenza (seasonal)", "COVID (as due)"],
+      "screenings": ["Blood pressure", "Vision", "Behavioral health surveillance"],
       "includeHC": false
     },
     "11yr": {
-      "milestones": ["Peer relationships", "Puberty discussion", "Independent self-care"],
-      "guidance": ["Digital safety", "Mental health", "Substance prevention", "Sleep hygiene"],
-      "immunizations": ["Tdap", "MenACWY", "HPV"],
-      "screenings": ["PHQ-A", "CRAFFT", "Lipid risk"],
+      "milestones": ["Peer relationships", "Puberty transition", "Independent self-care"],
+      "guidance": ["Mental health awareness", "Substance prevention", "Healthy relationships", "Sleep hygiene"],
+      "immunizations": ["Tdap", "MenACWY", "HPV", "Influenza (seasonal)"],
+      "screenings": ["PHQ-A", "CRAFFT", "Lipid risk", "Blood pressure"],
+      "includeHC": false
+    },
+    "12yr": {
+      "milestones": ["Identity development", "Executive functioning growth", "Academic self-management"],
+      "guidance": ["Confidential adolescent time", "Body image discussion", "Physical activity and nutrition", "Online safety"],
+      "immunizations": ["HPV (series continuation)", "Influenza (seasonal)", "COVID (as due)"],
+      "screenings": ["PHQ-A", "CRAFFT", "Blood pressure"],
+      "includeHC": false
+    },
+    "14yr": {
+      "milestones": ["Future planning discussion", "Self-advocacy", "Health autonomy"],
+      "guidance": ["Driving risk prevention", "Substance avoidance", "Sexual health counseling", "Stress management"],
+      "immunizations": ["Influenza (seasonal)", "COVID (as due)"],
+      "screenings": ["PHQ-A", "CRAFFT", "STI risk assessment", "Blood pressure"],
       "includeHC": false
     },
     "16yr": {
-      "milestones": ["Future planning", "Executive functioning", "Health autonomy"],
-      "guidance": ["Driving safety", "Sexual health", "Mood monitoring", "Substance avoidance"],
-      "immunizations": ["MenACWY booster", "Flu", "COVID booster"],
-      "screenings": ["PHQ-A", "CRAFFT", "BP", "STI risk"],
+      "milestones": ["Transition planning", "Executive functioning", "Independent healthcare participation"],
+      "guidance": ["Driving safety", "Sexual health and consent", "Mood monitoring", "Substance avoidance"],
+      "immunizations": ["MenACWY booster", "MenB discussion", "Influenza (seasonal)", "COVID booster (as due)"],
+      "screenings": ["PHQ-A", "CRAFFT", "STI risk", "Blood pressure"],
+      "includeHC": false
+    },
+    "18yr": {
+      "milestones": ["Transition to adult care", "Self-management of health records/medications", "Future education/work planning"],
+      "guidance": ["Adult preventive care handoff", "Insurance/consent literacy", "Mental health resources", "Substance safety"],
+      "immunizations": ["Influenza (seasonal)", "COVID booster (as due)", "MenB completion if indicated"],
+      "screenings": ["PHQ-A", "CRAFFT", "STI risk", "Blood pressure"],
       "includeHC": false
     }
   }

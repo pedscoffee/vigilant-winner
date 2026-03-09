@@ -1,46 +1,106 @@
 {
-  "_version": 2,
+  "_version": 7,
   "resultResponses": [
     {
-      "id": "normal-labs",
+      "id": "normal-cbc-cmp",
       "category": "Labs",
-      "name": "Normal labs",
-      "text": "[PATIENT_NAME]'s labs were reviewed and are within expected range for age. No changes to current care plan are needed."
+      "name": "Normal CBC/CMP",
+      "shortCode": "nlab",
+      "globalHotkey": "Control+Shift+Alt+Q",
+      "text": "[PATIENT_NAME]'s blood work was reviewed and is overall reassuring for age. No change to the current plan is needed at this time. Please continue routine follow up."
     },
     {
-      "id": "positive-strep",
+      "id": "normal-lead",
+      "category": "Labs",
+      "name": "Normal lead screen",
+      "shortCode": "leadn",
+      "text": "Lead screening for [PATIENT_NAME] is within normal range. Continue routine preventive care and risk reduction practices at home."
+    },
+    {
+      "id": "mild-anemia",
+      "category": "Labs",
+      "name": "Mild anemia message",
+      "shortCode": "anemia",
+      "text": "[PATIENT_NAME]'s labs show mild anemia. Please increase iron-rich foods and we will recheck in follow-up as discussed. Contact us sooner for worsening fatigue, pallor, or other concerns."
+    },
+    {
+      "id": "positive-strep-culture",
       "category": "Cultures",
       "name": "Positive strep culture",
-      "text": "Throat culture is positive for strep. Please continue prescribed antibiotic to completion and monitor hydration and fever trend."
+      "shortCode": "strepc",
+      "text": "Throat testing is positive for strep. Please complete the full antibiotic course as prescribed, encourage hydration, and call if fever/pain are not improving over the next 48 hours."
+    },
+    {
+      "id": "viral-test-positive",
+      "category": "Viral Testing",
+      "name": "Positive viral test",
+      "shortCode": "virpos",
+      "text": "[PATIENT_NAME]'s viral test returned positive. Treatment is supportive: fluids, rest, and symptom control. Please seek care for breathing difficulty, dehydration, or worsening symptoms."
     }
   ],
   "messageReplies": [
     {
       "id": "fever-triage",
-      "name": "Fever triage",
-      "text": "For [PATIENT_NAME], continue fluids and antipyretics as needed. Please seek urgent care for breathing difficulty, poor hydration, lethargy, or persistent fever beyond 5 days."
+      "name": "Fever home triage",
+      "shortCode": "fever",
+      "globalHotkey": "Control+Shift+Alt+W",
+      "text": "For [PATIENT_NAME], continue fluids and age-appropriate fever medication as needed for comfort. Seek urgent care for breathing difficulty, persistent vomiting, poor urine output, unusual sleepiness, or fever lasting more than 5 days."
     },
     {
-      "id": "vaccine-record",
+      "id": "cough-triage",
+      "name": "Cough triage",
+      "shortCode": "cough",
+      "text": "For [PATIENT_NAME], use supportive care (fluids, humidified air, saline as needed). Please seek urgent evaluation for increased work of breathing, chest pain, dehydration, or worsening symptoms."
+    },
+    {
+      "id": "rash-triage",
+      "name": "Rash triage",
+      "shortCode": "rash",
+      "text": "Please monitor [PATIENT_NAME]'s rash and send updated photos if it changes. Go to urgent care/ER now for facial swelling, breathing issues, severe pain, purple/non-blanching rash, or mucosal involvement."
+    },
+    {
+      "id": "vaccine-record-request",
       "name": "Vaccine record request",
-      "text": "Vaccine record for [PATIENT_NAME] has been prepared and can be provided through the portal."
+      "shortCode": "vxrec",
+      "text": "Vaccine record for [PATIENT_NAME] has been prepared and can be shared through the patient portal."
+    },
+    {
+      "id": "school-note-request",
+      "name": "School note response",
+      "shortCode": "school",
+      "text": "A school note for [PATIENT_NAME] has been completed and sent. Please let us know if your school requires a specific format."
     }
   ],
   "refillTemplates": [
     {
-      "id": "adhd-refill",
+      "id": "adhd-refill-stimulant",
       "medication": "Methylphenidate ER",
       "duration": "30 days",
       "quantity": "30 tablets",
-      "instructions": "Take 1 tablet daily in the morning.",
+      "instructions": "Take 1 tablet by mouth each morning.",
+      "followUpRequired": false
+    },
+    {
+      "id": "asthma-controller-refill",
+      "medication": "Fluticasone HFA",
+      "duration": "30 days",
+      "quantity": "1 inhaler",
+      "instructions": "Inhale prescribed puffs BID with spacer.",
       "followUpRequired": false
     }
   ],
   "schoolForms": [
     {
-      "id": "fever-free-clearance",
+      "id": "fever-free-return",
       "name": "Fever-free return",
-      "text": "May return to school/daycare once fever-free for 24 hours without fever-reducing medication and otherwise improving clinically."
+      "shortCode": "ret24",
+      "text": "[PATIENT_NAME] may return to school/daycare once fever-free for 24 hours without fever-reducing medication and otherwise clinically improving."
+    },
+    {
+      "id": "post-viral-return",
+      "name": "Post-viral return guidance",
+      "shortCode": "viralrt",
+      "text": "[PATIENT_NAME] may return when energy and oral intake are improving and no new concerning symptoms are present."
     }
   ],
   "priorAuth": [
@@ -48,7 +108,13 @@
       "id": "ics-pa",
       "condition": "Persistent asthma",
       "medication": "Inhaled corticosteroid",
-      "text": "Medication is medically necessary for controller therapy due to persistent symptoms and to reduce exacerbation risk."
+      "text": "Controller medication is medically necessary due to persistent asthma symptoms and to reduce exacerbation risk, urgent care use, and oral steroid exposure."
+    },
+    {
+      "id": "adhd-stimulant-pa",
+      "condition": "ADHD",
+      "medication": "Long-acting stimulant",
+      "text": "Medication is medically necessary for ADHD symptom control and functional school/home performance after clinical evaluation and ongoing follow-up."
     }
   ]
 }

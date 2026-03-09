@@ -1,40 +1,145 @@
 {
-  "_version": 2,
+  "_version": 7,
   "complaints": {
     "Fever": {
-      "associated": ["Congestion", "Cough", "Vomiting", "Diarrhea", "Rash", "Ear pain"],
-      "exposures": ["Sick contacts", "Daycare", "Recent travel"],
-      "ros": ["No respiratory distress", "No decreased urine output"],
-      "exam": ["Nontoxic appearance", "Hydration status assessed"],
-      "diagnoses": ["Viral syndrome", "AOM", "Strep pharyngitis"]
+      "associated": ["Congestion", "Cough", "Sore throat", "Vomiting", "Diarrhea", "Rash", "Ear pain", "Headache"],
+      "exposures": ["Sick contacts", "Daycare", "School exposure", "Recent travel"],
+      "ros": ["No respiratory distress", "No decreased urine output", "No altered mental status"],
+      "exam": ["Nontoxic appearance", "Hydration status assessed", "Cap refill <2 sec"],
+      "diagnoses": ["Viral syndrome", "Viral URI", "Strep Pharyngitis", "Acute Otitis Media (AOM) - Unilateral", "Influenza-like Illness"]
     },
     "Cough": {
-      "associated": ["Congestion", "Wheeze", "Fever", "Post-tussive emesis"],
-      "exposures": ["Sick contacts", "Smoke exposure", "Asthma history"],
-      "ros": ["No cyanosis", "No apnea"],
-      "exam": ["Respiratory effort", "Lung auscultation"],
-      "diagnoses": ["Viral URI", "Bronchiolitis", "Asthma exacerbation"]
+      "associated": ["Congestion", "Wheeze", "Fever", "Post-tussive emesis", "Sore throat"],
+      "exposures": ["Sick contacts", "Smoke exposure", "Asthma history", "Daycare"],
+      "ros": ["No cyanosis", "No apnea", "No stridor at rest"],
+      "exam": ["Respiratory effort assessed", "Lung auscultation performed", "No focal crackles"],
+      "diagnoses": ["Viral URI", "Bronchiolitis", "Asthma Exacerbation - Mild", "Allergic Rhinitis"]
     },
-    "Sore throat": {
-      "associated": ["Fever", "Headache", "Abdominal pain", "Rash"],
-      "exposures": ["Strep contact", "School exposure"],
-      "ros": ["No drooling", "No trismus"],
-      "exam": ["Tonsils", "Cervical nodes"],
-      "diagnoses": ["Strep pharyngitis", "Viral pharyngitis"]
+    "Congestion": {
+      "associated": ["Cough", "Ear pain", "Sore throat", "Headache"],
+      "exposures": ["Sick contacts", "Seasonal allergy triggers"],
+      "ros": ["No persistent facial swelling", "No breathing distress"],
+      "exam": ["Nasal mucosa evaluated", "Sinus tenderness assessed"],
+      "diagnoses": ["Viral URI", "Allergic Rhinitis", "Acute Bacterial Sinusitis"]
     },
     "Ear pain": {
       "associated": ["Fever", "URI symptoms", "Otorrhea"],
       "exposures": ["Recent URI", "Swimming"],
-      "ros": ["No mastoid pain"],
-      "exam": ["TM landmarks", "Canal exam"],
-      "diagnoses": ["Acute Otitis Media (AOM) - Unilateral", "Otitis externa"]
+      "ros": ["No mastoid pain", "No neck stiffness"],
+      "exam": ["TM landmarks assessed", "Canal exam performed", "Mastoid exam normal"],
+      "diagnoses": ["Acute Otitis Media (AOM) - Unilateral", "Acute Otitis Media - Watchful Waiting", "Otitis Externa"]
+    },
+    "Sore throat": {
+      "associated": ["Fever", "Headache", "Abdominal pain", "Rash", "Decreased appetite"],
+      "exposures": ["Strep contact", "School exposure"],
+      "ros": ["No drooling", "No trismus", "No voice muffling"],
+      "exam": ["Tonsils evaluated", "Cervical nodes examined", "Hydration assessed"],
+      "diagnoses": ["Strep Pharyngitis", "Viral Pharyngitis", "Viral URI"]
     },
     "Rash": {
-      "associated": ["Itching", "Fever", "New soaps", "New foods"],
-      "exposures": ["Sick contacts", "Outdoor exposure", "Medication change"],
-      "ros": ["No mucosal lesions", "No breathing difficulty"],
-      "exam": ["Morphology", "Distribution"],
-      "diagnoses": ["Viral exanthem", "Atopic dermatitis", "Urticaria"]
+      "associated": ["Itching", "Fever", "New soaps", "New foods", "Medication exposure"],
+      "exposures": ["Sick contacts", "Outdoor exposure", "Recent medication"],
+      "ros": ["No mucosal lesions", "No breathing difficulty", "No facial swelling"],
+      "exam": ["Morphology described", "Distribution documented", "Blanching assessed"],
+      "diagnoses": ["Viral Exanthem", "Atopic Dermatitis", "Urticaria"]
+    },
+    "Vomiting": {
+      "associated": ["Diarrhea", "Abdominal pain", "Fever", "Poor appetite"],
+      "exposures": ["Sick contacts", "New foods", "Travel"],
+      "ros": ["No bilious emesis", "No severe persistent pain"],
+      "exam": ["Abdominal exam performed", "Hydration status assessed"],
+      "diagnoses": ["Acute Gastroenteritis", "Viral syndrome"]
+    },
+    "Diarrhea": {
+      "associated": ["Vomiting", "Abdominal pain", "Fever"],
+      "exposures": ["Sick contacts", "Travel", "New foods"],
+      "ros": ["No blood in stool", "No oliguria"],
+      "exam": ["Hydration status assessed", "Abdomen soft/non-peritoneal"],
+      "diagnoses": ["Acute Gastroenteritis", "Viral syndrome"]
+    },
+    "Abdominal pain": {
+      "associated": ["Constipation", "Vomiting", "Diarrhea", "Fever", "Dysuria"],
+      "exposures": ["Recent viral illness", "Dietary changes"],
+      "ros": ["No persistent RLQ progression", "No bilious emesis"],
+      "exam": ["Abdominal tenderness characterized", "Peritoneal signs assessed"],
+      "diagnoses": ["Constipation - Functional", "Acute Gastroenteritis", "Viral syndrome"]
+    },
+    "Headache": {
+      "associated": ["Fever", "Congestion", "Photophobia", "Nausea"],
+      "exposures": ["Recent viral illness", "Sleep deprivation"],
+      "ros": ["No morning emesis", "No focal neurologic deficits"],
+      "exam": ["Neurologic exam non-focal", "Neck ROM assessed"],
+      "diagnoses": ["Viral syndrome", "Acute Bacterial Sinusitis"]
+    },
+    "Limp/extremity pain": {
+      "associated": ["Fever", "Recent injury", "Swelling"],
+      "exposures": ["Sports activity", "Recent viral illness"],
+      "ros": ["No inability to bear weight at rest", "No numbness"],
+      "exam": ["Gait observed", "Joint exam performed", "Neurovascular status intact"],
+      "diagnoses": ["Extremity Pain - Likely Musculoskeletal"]
+    },
+    "Eye discharge": {
+      "associated": ["Redness", "Itching", "URI symptoms"],
+      "exposures": ["Sick contacts", "Daycare"],
+      "ros": ["No vision change", "No eye pain with movement"],
+      "exam": ["Conjunctiva examined", "Periorbital swelling assessed"],
+      "diagnoses": ["Conjunctivitis - Bacterial", "Viral URI"]
+    },
+    "Urinary symptoms": {
+      "associated": ["Dysuria", "Frequency", "Abdominal pain", "Fever"],
+      "exposures": ["Constipation history", "Bubble baths"],
+      "ros": ["No flank pain", "No vomiting"],
+      "exam": ["Abdominal and CVA tenderness assessed", "Hydration assessed"],
+      "diagnoses": ["Constipation - Functional"]
+    },
+    "Wound check": {
+      "associated": ["Pain", "Drainage", "Redness"],
+      "exposures": ["Recent injury", "Recent procedure"],
+      "ros": ["No fever", "No spreading erythema"],
+      "exam": ["Wound margins evaluated", "Signs of infection assessed"],
+      "diagnoses": ["Viral syndrome"]
+    },
+    "Allergic reaction": {
+      "associated": ["Rash", "Itching", "Swelling", "GI symptoms"],
+      "exposures": ["New food", "New medication", "Insect exposure"],
+      "ros": ["No respiratory distress", "No syncope"],
+      "exam": ["Airway exam stable", "Skin findings documented"],
+      "diagnoses": ["Urticaria"]
+    },
+    "Behavioral concern": {
+      "associated": ["School concerns", "Sleep difficulty", "Family stress"],
+      "exposures": ["Recent stressor", "Academic transition"],
+      "ros": ["No safety concerns reported", "No acute self-harm concern"],
+      "exam": ["Affect and engagement observed", "Developmental context reviewed"],
+      "diagnoses": ["Anxiety/Depression Screen - Negative", "ADHD Follow-up - Stable"]
+    },
+    "Anxiety/depression screen": {
+      "associated": ["Low mood", "Anxiety", "Sleep change", "Concentration concerns"],
+      "exposures": ["School stress", "Social stressor"],
+      "ros": ["No current SI/HI reported", "No psychosis symptoms"],
+      "exam": ["Mood/affect documented", "Safety assessment completed"],
+      "diagnoses": ["Anxiety/Depression Screen - Negative", "ADHD Follow-up - Stable"]
+    },
+    "ADHD follow-up": {
+      "associated": ["Inattention", "Hyperactivity", "Medication appetite change", "Sleep concerns"],
+      "exposures": ["School feedback", "Medication timing changes"],
+      "ros": ["No chest pain", "No severe mood lability"],
+      "exam": ["Growth reviewed", "BP/HR reviewed", "Behavioral status observed"],
+      "diagnoses": ["ADHD Follow-up - Stable"]
+    },
+    "Medication refill": {
+      "associated": ["Adherence", "Side effects", "Pharmacy access"],
+      "exposures": ["Insurance formulary changes"],
+      "ros": ["No new adverse effects reported"],
+      "exam": ["Medication monitoring reviewed"],
+      "diagnoses": ["ADHD Follow-up - Stable"]
+    },
+    "Sports physical": {
+      "associated": ["Exercise tolerance", "Injury history"],
+      "exposures": ["Team sport participation"],
+      "ros": ["No exertional syncope", "No exertional chest pain"],
+      "exam": ["Cardiac exam completed", "MSK screen completed"],
+      "diagnoses": ["Sports Physical - Cleared", "Routine Child Health Examination"]
     }
   }
 }
