@@ -1,10 +1,40 @@
 {
-  "_version": 1,
+  "_version": 2,
   "complaints": {
     "Fever": {
-      "hpiPrompts": ["Duration", "Max temperature", "Associated symptoms", "Sick contacts"],
-      "focusedRos": ["No respiratory distress", "No decreased urine output"],
-      "suggestedDiagnoses": ["Viral syndrome", "AOM", "Strep pharyngitis"]
+      "associated": ["Congestion", "Cough", "Vomiting", "Diarrhea", "Rash", "Ear pain"],
+      "exposures": ["Sick contacts", "Daycare", "Recent travel"],
+      "ros": ["No respiratory distress", "No decreased urine output"],
+      "exam": ["Nontoxic appearance", "Hydration status assessed"],
+      "diagnoses": ["Viral syndrome", "AOM", "Strep pharyngitis"]
+    },
+    "Cough": {
+      "associated": ["Congestion", "Wheeze", "Fever", "Post-tussive emesis"],
+      "exposures": ["Sick contacts", "Smoke exposure", "Asthma history"],
+      "ros": ["No cyanosis", "No apnea"],
+      "exam": ["Respiratory effort", "Lung auscultation"],
+      "diagnoses": ["Viral URI", "Bronchiolitis", "Asthma exacerbation"]
+    },
+    "Sore throat": {
+      "associated": ["Fever", "Headache", "Abdominal pain", "Rash"],
+      "exposures": ["Strep contact", "School exposure"],
+      "ros": ["No drooling", "No trismus"],
+      "exam": ["Tonsils", "Cervical nodes"],
+      "diagnoses": ["Strep pharyngitis", "Viral pharyngitis"]
+    },
+    "Ear pain": {
+      "associated": ["Fever", "URI symptoms", "Otorrhea"],
+      "exposures": ["Recent URI", "Swimming"],
+      "ros": ["No mastoid pain"],
+      "exam": ["TM landmarks", "Canal exam"],
+      "diagnoses": ["Acute Otitis Media (AOM) - Unilateral", "Otitis externa"]
+    },
+    "Rash": {
+      "associated": ["Itching", "Fever", "New soaps", "New foods"],
+      "exposures": ["Sick contacts", "Outdoor exposure", "Medication change"],
+      "ros": ["No mucosal lesions", "No breathing difficulty"],
+      "exam": ["Morphology", "Distribution"],
+      "diagnoses": ["Viral exanthem", "Atopic dermatitis", "Urticaria"]
     }
   }
 }

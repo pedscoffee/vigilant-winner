@@ -1,6 +1,16 @@
-const { clipboard, ipcMain } = require('electron');
+const { clipboard, dialog, ipcMain } = require('electron');
 
-function registerIpc({ getMainWindow, getUserData, saveData, getPreferences, savePreferences, toggleWindow, registerToggleShortcut }) {
+function registerIpc({
+  getMainWindow,
+  getUserData,
+  saveData,
+  getPreferences,
+  savePreferences,
+  toggleWindow,
+  registerToggleShortcut,
+  exportBundle,
+  importBundle
+}) {
   ipcMain.handle('data:load', async () => getUserData());
 
   ipcMain.handle('data:save', async (_event, { key, value }) => {
@@ -36,7 +46,11 @@ function registerIpc({ getMainWindow, getUserData, saveData, getPreferences, sav
   });
 
   ipcMain.handle('shortcuts:set-toggle', async (_event, accelerator) => {
-    registerToggleShortcut(accelerator);
+    const ok = registerToggleShortcut(accelerator);
+    if (!ok) {
+      throw new Error(`Could not register shortcut: ${accelerator}`);
+    }
+
     const prefs = getPreferences();
     savePreferences({
       ...prefs,
@@ -46,6 +60,38 @@ function registerIpc({ getMainWindow, getUserData, saveData, getPreferences, sav
       }
     });
     return true;
+  });
+
+  ipcMain.handle('backup:export', async () => {
+    const mainWindow = getMainWindow();
+    const { canceled, filePath } = await dialog.showSaveDialog(mainWindow, {
+      title: 'Export Clinical Dashboard Backup',
+      defaultPath: 'clinical-dashboard-backup.json',
+      filters: [{ name: 'JSON', extensions: ['json'] }]
+    });
+
+    if (canceled || !filePath) {
+      return { canceled: true };
+    }
+
+    exportBundle(filePath);
+    return { canceled: false, filePath };
+  });
+
+  ipcMain.handle('backup:import', async () => {
+    const mainWindow = getMainWindow();
+    const { canceled, filePaths } = await dialog.showOpenDialog(mainWindow, {
+      title: 'Import Clinical Dashboard Backup',
+      properties: ['openFile'],
+      filters: [{ name: 'JSON', extensions: ['json'] }]
+    });
+
+    if (canceled || !filePaths?.length) {
+      return { canceled: true };
+    }
+
+    importBundle(filePaths[0]);
+    return { canceled: false, filePath: filePaths[0] };
   });
 }
 

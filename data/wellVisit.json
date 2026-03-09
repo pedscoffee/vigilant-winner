@@ -1,10 +1,47 @@
 {
-  "_version": 1,
+  "_version": 2,
   "ages": {
     "2mo": {
-      "milestones": ["Tracks objects", "Social smile", "Coos"],
-      "guidance": ["Safe sleep", "Rear-facing car seat", "Feeding cues"],
-      "immunizations": ["DTaP", "IPV", "Hib", "PCV", "Rotavirus", "Hep B"]
+      "milestones": ["Social smile", "Coos", "Tracks past midline"],
+      "guidance": ["Safe sleep", "Rear-facing car seat", "Vitamin D", "Tummy time"],
+      "immunizations": ["DTaP", "IPV", "Hib", "PCV", "Rotavirus", "Hep B"],
+      "screenings": ["Postpartum depression", "Maternal support"],
+      "includeHC": true
+    },
+    "12mo": {
+      "milestones": ["Cruises", "Pincer grasp", "1-2 words"],
+      "guidance": ["Whole milk transition", "Oral care", "Home safety", "Screen time limits"],
+      "immunizations": ["MMR", "Varicella", "Hep A", "PCV", "Hib"],
+      "screenings": ["Lead", "Hemoglobin"],
+      "includeHC": false
+    },
+    "2yr": {
+      "milestones": ["2-word phrases", "Runs", "Follows 2-step commands"],
+      "guidance": ["Toilet readiness", "Nutrition", "Sleep routines", "Behavioral limits"],
+      "immunizations": ["Hep A"],
+      "screenings": ["MCHAT-R", "Anemia risk", "Lead risk"],
+      "includeHC": false
+    },
+    "5yr": {
+      "milestones": ["Prints some letters", "Counts to 10", "Hops/skips"],
+      "guidance": ["School readiness", "Activity", "Safety rules", "Dental hygiene"],
+      "immunizations": ["DTaP", "IPV", "MMR", "Varicella"],
+      "screenings": ["Vision", "Hearing"],
+      "includeHC": false
+    },
+    "11yr": {
+      "milestones": ["Peer relationships", "Puberty discussion", "Independent self-care"],
+      "guidance": ["Digital safety", "Mental health", "Substance prevention", "Sleep hygiene"],
+      "immunizations": ["Tdap", "MenACWY", "HPV"],
+      "screenings": ["PHQ-A", "CRAFFT", "Lipid risk"],
+      "includeHC": false
+    },
+    "16yr": {
+      "milestones": ["Future planning", "Executive functioning", "Health autonomy"],
+      "guidance": ["Driving safety", "Sexual health", "Mood monitoring", "Substance avoidance"],
+      "immunizations": ["MenACWY booster", "Flu", "COVID booster"],
+      "screenings": ["PHQ-A", "CRAFFT", "BP", "STI risk"],
+      "includeHC": false
     }
   }
 }

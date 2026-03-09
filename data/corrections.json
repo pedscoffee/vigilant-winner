@@ -1,4 +1,10 @@
 {
-  "_version": 1,
-  "rules": []
+  "_version": 2,
+  "rules": [
+    {
+      "id": "double-space",
+      "find": "  ",
+      "replace": " "
+    }
+  ]
 }

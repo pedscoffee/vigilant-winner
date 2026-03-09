@@ -7,11 +7,22 @@ const DEFAULT_LABELS = {
   plan: 'Plan'
 };
 
+function formatBody(values, separator) {
+  if (separator === 'dash') {
+    return values.map((line) => `- ${line}`).join('\n');
+  }
+  if (separator === 'line') {
+    return values.join('\n');
+  }
+  return values.join('\n');
+}
+
 export function buildOutputText(sections, preferences = {}) {
   const outputFormat = preferences.outputFormat || {};
   const order = outputFormat.order || DEFAULT_ORDER;
   const showHeaders = outputFormat.showHeaders !== false;
   const labels = { ...DEFAULT_LABELS, ...(outputFormat.labels || {}) };
+  const separator = outputFormat.separator || 'blank';
 
   const rendered = [];
 
@@ -21,16 +32,9 @@ export function buildOutputText(sections, preferences = {}) {
       continue;
     }
 
-    const body = values.join('\n');
+    const body = formatBody(values, separator);
     rendered.push(showHeaders ? `${labels[key]}:\n${body}` : body);
   }
 
   return rendered.join('\n\n').trim();
-}
-
-export function upsertUniqueLine(lines, nextLine) {
-  if (!nextLine || lines.includes(nextLine)) {
-    return lines;
-  }
-  return [...lines, nextLine];
 }

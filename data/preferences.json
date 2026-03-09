@@ -1,5 +1,5 @@
 {
-  "_version": 1,
+  "_version": 2,
   "windowState": {
     "width": 480,
     "height": 700,
@@ -16,9 +16,17 @@
       "exam": "Exam",
       "assessment": "Assessment",
       "plan": "Plan"
-    }
+    },
+    "separator": "blank"
   },
   "shortcuts": {
-    "globalCommandPalette": "Control+Space"
-  }
+    "globalCommandPalette": "Control+Space",
+    "entries": []
+  },
+  "examDefaults": {
+    "includeSystems": {
+      "GU": false
+    }
+  },
+  "firstLaunchCompleted": false
 }

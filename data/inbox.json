@@ -1,11 +1,54 @@
 {
-  "_version": 1,
-  "templates": [
+  "_version": 2,
+  "resultResponses": [
     {
       "id": "normal-labs",
       "category": "Labs",
       "name": "Normal labs",
-      "text": "Lab results were reviewed and are within expected normal range for age. No changes to current plan are needed at this time."
+      "text": "[PATIENT_NAME]'s labs were reviewed and are within expected range for age. No changes to current care plan are needed."
+    },
+    {
+      "id": "positive-strep",
+      "category": "Cultures",
+      "name": "Positive strep culture",
+      "text": "Throat culture is positive for strep. Please continue prescribed antibiotic to completion and monitor hydration and fever trend."
+    }
+  ],
+  "messageReplies": [
+    {
+      "id": "fever-triage",
+      "name": "Fever triage",
+      "text": "For [PATIENT_NAME], continue fluids and antipyretics as needed. Please seek urgent care for breathing difficulty, poor hydration, lethargy, or persistent fever beyond 5 days."
+    },
+    {
+      "id": "vaccine-record",
+      "name": "Vaccine record request",
+      "text": "Vaccine record for [PATIENT_NAME] has been prepared and can be provided through the portal."
+    }
+  ],
+  "refillTemplates": [
+    {
+      "id": "adhd-refill",
+      "medication": "Methylphenidate ER",
+      "duration": "30 days",
+      "quantity": "30 tablets",
+      "instructions": "Take 1 tablet daily in the morning.",
+      "followUpRequired": false
+    }
+  ],
+  "schoolForms": [
+    {
+      "id": "fever-free-clearance",
+      "name": "Fever-free return",
+      "text": "May return to school/daycare once fever-free for 24 hours without fever-reducing medication and otherwise improving clinically."
+    }
+  ],
+  "priorAuth": [
+    {
+      "id": "ics-pa",
+      "condition": "Persistent asthma",
+      "medication": "Inhaled corticosteroid",
+      "text": "Medication is medically necessary for controller therapy due to persistent symptoms and to reduce exacerbation risk."
     }
   ]
 }
